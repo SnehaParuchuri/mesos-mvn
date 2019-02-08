@@ -7,6 +7,11 @@
   <version>1.0-SNAPSHOT</version>
   <name>MavenHelloWorldProject</name>
   <url>http://maven.apache.org</url>
+  <repository>              
+          <id>central</id>
+          <name>Central</name>
+          <url>http://repo1.maven.org/maven2</url>
+</repository>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
