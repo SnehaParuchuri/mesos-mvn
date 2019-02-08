@@ -7,11 +7,6 @@
   <version>1.0-SNAPSHOT</version>
   <name>MavenHelloWorldProject</name>
   <url>http://maven.apache.org</url>
- <proxy>
-   <active>true</active>
-   <host></host>
-   <port>8085</port>
- </proxy>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
