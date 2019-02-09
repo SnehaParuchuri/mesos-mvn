@@ -8,12 +8,16 @@
   <name>MavenHelloWorldProject</name>
   <url>http://maven.apache.org</url>
   <repositories>
-  <repository>              
-          <id>central</id>
-          <name>Central</name>
-          <url>http://repo1.maven.org/maven2</url>
-</repository>
- </repositories>
+        <repository>
+          <id>jdk14</id>
+          <name>Repository for JDK 1.4 builds</name>
+          <url>http://www.myhost.com/maven/jdk14</url>
+          <layout>default</layout>
+          <snapshotPolicy>always</snapshotPolicy>
+        </repository>
+      </repositories>
+  <repositories>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
