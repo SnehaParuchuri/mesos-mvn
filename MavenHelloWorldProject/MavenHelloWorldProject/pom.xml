@@ -15,6 +15,18 @@
           <layout>default</layout>
         </repository>
       </repositories>
+  <proxies>
+    <proxy>
+      <id>optional</id>
+      <active>true</active>
+      <protocol>http</protocol>
+      <username>proxyuser</username>
+      <password>proxypass</password>
+      <host>proxy.host.net</host>
+      <port>80</port>
+      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
+    </proxy>
+  </proxies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
