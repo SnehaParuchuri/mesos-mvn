@@ -14,19 +14,7 @@
           <url>http://www.myhost.com/maven/jdk14</url>
           <layout>default</layout>
         </repository>
-      </repositories>
-  
-    <proxy>
-      <id>optional</id>
-      <active>true</active>
-      <protocol>http</protocol>
-      <username>proxyuser</username>
-      <password>proxypass</password>
-      <host>proxy.host.net</host>
-      <port>8080</port>
-      <nonProxyHosts>local.net|some.host.com</nonProxyHosts>
-    </proxy>
-  
+      </repositories>  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
