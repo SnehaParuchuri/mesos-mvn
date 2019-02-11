@@ -1,0 +1,50 @@
+{
+  "env": {
+    "JAVA_OPTS": "-Xms256m -Xmx256m"
+  },
+  "id": "/mvn-app",
+  "backoffFactor": 1.15,
+  "backoffSeconds": 1,
+  "container": {
+    "portMappings": [
+      {
+        "containerPort": 8080,
+        "hostPort": 8058,
+        "protocol": "tcp",
+        "servicePort": 10004
+      }
+    ],
+    "type": "DOCKER",
+    "volumes": [],
+    "docker": {
+      "image": "santoshm93/mavenwebapp",
+      "forcePullImage": false,
+      "privileged": false,
+      "parameters": []
+    }
+  },
+  "cpus": 0.2,
+  "disk": 500,
+  "instances": 1,
+  "maxLaunchDelaySeconds": 3600,
+  "mem": 256,
+  "gpus": 0,
+  "networks": [
+    {
+      "mode": "container/bridge"
+    }
+  ],
+  "requirePorts": false,
+  "upgradeStrategy": {
+    "maximumOverCapacity": 1,
+    "minimumHealthCapacity": 1
+  },
+  "killSelection": "YOUNGEST_FIRST",
+  "unreachableStrategy": {
+    "inactiveAfterSeconds": 0,
+    "expungeAfterSeconds": 0
+  },
+  "healthChecks": [],
+  "fetch": [],
+  "constraints": []
+}
