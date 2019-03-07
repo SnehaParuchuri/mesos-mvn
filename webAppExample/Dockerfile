@@ -1,2 +1,2 @@
 FROM tomcat:8
-ADD target/*.war /usr/local/tomcat/webapps/
+ADD target/webappExample.war /usr/local/tomcat/webapps/
